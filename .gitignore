@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+.qoder-sites/
+.qoder-sites.json
+
+# Qoder 站点描述符（本机绑定，无迁移意义）
+*.qoder.site
+
+# 本地搬迁/审计工具（含现网配置快照、探针脚本，绝不入库）
+_scratch/
