@@ -1,4 +1,10 @@
 {
   "nodeModulesDir": "auto",
-  "unstable": ["cron"]
+  "unstable": ["cron"],
+  "deploy": {
+    "runtime": {
+      "type": "dynamic",
+      "entrypoint": "./deploy/deno-deploy.ts"
+    }
+  }
 }
