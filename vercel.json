@@ -11,6 +11,6 @@
     { "source": "/((?!functions/|api/).*)", "destination": "/index.html" }
   ],
   "crons": [
-    { "path": "/api/cron/tasks", "schedule": "*/10 * * * *" }
+    { "path": "/api/cron/tasks", "schedule": "0 1 * * *" }
   ]
 }
