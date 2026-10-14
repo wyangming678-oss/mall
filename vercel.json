@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/functions/v1/app/:path*",
-      "destination": "/api/functions/v1/app/:path*"
+      "destination": "/api/functions/v1/app/dispatch?_p=:path*"
     },
     { "source": "/((?!functions/|api/).*)", "destination": "/index.html" }
   ],
