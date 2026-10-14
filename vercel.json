@@ -6,8 +6,11 @@
   "rewrites": [
     {
       "source": "/functions/v1/app/:path*",
-      "destination": "https://mall.wyangming678-oss.deno.net/functions/v1/app/:path*"
+      "destination": "/api/functions/v1/app/:path*"
     },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!functions/|api/).*)", "destination": "/index.html" }
+  ],
+  "crons": [
+    { "path": "/api/cron/tasks", "schedule": "*/10 * * * *" }
   ]
 }
