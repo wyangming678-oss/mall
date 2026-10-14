@@ -3,5 +3,11 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/functions/v1/app/:path*",
+      "destination": "https://mall.wyangming678-oss.deno.net/functions/v1/app/:path*"
+    },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
